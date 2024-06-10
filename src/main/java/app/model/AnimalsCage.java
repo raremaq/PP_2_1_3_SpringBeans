@@ -11,7 +11,7 @@ public class AnimalsCage {
     @Autowired
     private Animal animal;
     @Autowired
-    private TimerBean timerBean;
+    private Timer timer;
 
     public void whatAnimalSay() {
         System.out.println("Say:");
@@ -23,6 +23,6 @@ public class AnimalsCage {
 
 
     public Timer getTimer() {
-        return timerBean.getTimer();
+        return timer.getTimer();
     }
 }
